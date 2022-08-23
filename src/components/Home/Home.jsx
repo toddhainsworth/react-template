@@ -10,7 +10,9 @@ const Home = () => {
         React is up and running
       </h1>
       <p>You've clicked {clicks} times</p>
-      <Button onClick={() => setClicks(clicks + 1)}>Click me!</Button>
+      <Button onClick={() => setClicks((prevClicks) => prevClicks + 1)}>
+        Click me!
+      </Button>
     </div>
   );
 };
